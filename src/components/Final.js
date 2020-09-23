@@ -18,26 +18,31 @@ const Final = () => {
   }, []);
 
   return (
-    <div className='container '>
-      <div className='grid-2'>
+    <div>
+      <div className='grid-2c'>
         <div>
           {modal ? (
             <Modal3 urls={urls} toggleModal={toggleModal} />
           ) : (
-            <img src={final} alt='Final Demand For Payment' />
+            <img
+              style={{ height: "150vh", width: "85%" }}
+              src={final}
+              alt='Final Demand For Payment'
+            />
           )}
         </div>
-        <div>
+        <div className='m-2'>
           <br />
 
           <h2 className='lead' style={{ color: "red" }}>
-            Final Demand For Payment Letter
+            Distraint Warrant Letter
           </h2>
-          <h3>
+          <h3 className='py-1'>
             Pending Legal Action Against American Tax Solutions,
             GetATaxLawyer.com and Tax Debt Resolution
           </h3>
-          <h4>
+
+          <h4 className='py-1'>
             <i>
               If you or a loved one has recieved a letter like this one, you may
               be entitled to compensation as an ongoing complaint filed against
@@ -45,37 +50,20 @@ const Final = () => {
               Selb Aka Chris Baker.{" "}
             </i>
           </h4>
-          <br />
+
           <button
             className='btn btn-block btn-dark'
             onClick={() => setModal((prevState) => !prevState)}>
             File A Complaint
           </button>
 
-          <h5>
+          <h5 className='py-1'>
             <i>
               Your complaints are completely anonymous and could lead to
               financial compensation if you were directly impacted by this scam.
             </i>
           </h5>
           <br />
-          <ul>
-            <li>
-              <h4>
-                Disbarred Attorney Terrance Selb sends these mailers to people
-                in an attempt to solicit services.
-              </h4>
-            </li>
-            <br />
-            <li>
-              <h5>
-                We are actively submitting all complaints against Terrance Selb,
-                Tyler Bennet, Chris Baker, Ben Graupner and Andruw Rapport and
-                the companies American Tax Solutions, Tax Debt Group and
-                GetATaxLawyer.com to the BBB, FTC and State of California.
-              </h5>
-            </li>
-          </ul>
         </div>
       </div>
     </div>

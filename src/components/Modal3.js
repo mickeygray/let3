@@ -36,6 +36,14 @@ const Modal3 = (props) => {
     <div
       className='card bg-light container all-center'
       style={{ margin: "auto" }}>
+      <h5>
+        <i>
+          We are actively submitting all complaints against Terrance Selb, Tyler
+          Bennet, Chris Baker, Ben Graupner and Andruw Rapport and the companies
+          American Tax Solutions, Tax Debt Group and GetATaxLawyer.com to the
+          BBB, FTC and State of California.
+        </i>
+      </h5>
       <form
         className='form-text'
         name='form'
