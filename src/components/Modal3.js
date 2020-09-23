@@ -22,7 +22,6 @@ const Modal3 = (props) => {
     client: "",
     paid: "",
     url: urls,
-    mailers: [],
   });
 
   const onChange = (e) => {
